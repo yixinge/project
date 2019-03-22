@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.yixin</groupId>
+        <artifactId>my-project-dependencies</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../my-project-dependencies/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>my-project-shop</artifactId>
+    <packaging>pom</packaging>
+    <name>my-project-shop</name>
+    <description></description>
+
+    <modules>
+        <module>my-project-shop-web-admin</module>
+        <module>my-project-shop-web-api</module>
+        <module>my-project-shop-web-ui</module>
+        <module>my-project-shop-domain</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.yixin</groupId>
+            <artifactId>my-project-commons</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
+
+
+</project>
